@@ -41,8 +41,8 @@ header,
 }
 
 #HandleBarsbody {
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
 }
 
 /* Removing default attributes of links */
@@ -85,3 +85,7 @@ header,
   padding-right: 3.5rem;
   font-size: 1.5rem;
 }
+/* footer {
+  margin-left: 100%;
+  margin-right: 100%;
+} */
