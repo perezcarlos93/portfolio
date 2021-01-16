@@ -16,7 +16,7 @@ This is my work in progress, full-stack developer portfolio. Below you can see s
 
 ## Design Concept <a name="Concept"></a>
 
-![Drag Racing](/Concepts/HomePage.jpg)
+![HomePage](./Concepts/HomePage.jpg)
 
 
 ## Contributors <a name="Contributors"></a>
