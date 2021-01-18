@@ -5,6 +5,7 @@
 }
 .oneday {
   font-family: 'oneday';
+  color: white;
 }
 @font-face {
   src: url('/Assets/ebrima.ttf');
@@ -12,37 +13,21 @@
 }
 .embrima {
   font-family: 'ebrima';
+  color: white;
 }
 
-header,
-.project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-}
-
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
-}
-
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
-}
-
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+/* Background Photo */
+body {
+  /* background-image: url('https://previews.dropbox.com/p/thumb/ABCYg9UfZi92jCZRuU0t1rGbEgETQ0bFFqxVio6Vu13LmFFSPOGEOzqFnvPL222c20tRuoEulbvmUt3gqcCJJSlQDsAlc2ANSe8Ix49o5yZ30MZFIoBfW_OK5nlYY250eZWeFfkDFpOH7CiLtbhNtJC7pzRGG0u3SpipKkMiG_RIW-Zsupd3NNAj9rHWvmquKQuzC0jDUJA-2cGtLuBc5RxH9JQkmJCvRJ_QRnr_gpBoZFSR2CDRtfb4Pc84kLsY-n4v-4BaQ6PEO0o4CnZjmu_CyC0lKRDrYZnk0evPyGagAz2gzfokczSkztNhOCbsy7tz0ZXpJBfa2Eb2hqjRSzUQS3OJJBXRxnoJHQ9ltNuBEg/p.png?fv_content=true&size_mode=5'); */
+  background-image: url('/Assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 #HandleBarsbody {
-  padding-left: 9rem;
-  padding-right: 9rem;
+  padding-left: 11rem;
+  padding-right: 11rem;
 }
 
 /* Removing default attributes of links */
@@ -62,9 +47,6 @@ header,
   flex-direction: row;
   flex-wrap: nowrap;
 }
-/* .fixed {
-  position: fixed;
-} */
 
 /* Custom Navbar logo */
 .logo {
@@ -85,7 +67,8 @@ header,
   padding-right: 3.5rem;
   font-size: 1.5rem;
 }
-/* footer {
-  margin-left: 100%;
-  margin-right: 100%;
-} */
+footer {
+  margin-top: 50%;
+  margin-bottom: 1rem;
+  margin-left: 45%;
+}

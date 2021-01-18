@@ -4,28 +4,35 @@ router.get('/', (req, res) => {
   try {
     res.render('homepage');
   } catch (err) {
-    // res.json.status(500);
+    res.json.status(500);
   }
 });
 router.get('/aboutme', (req, res) => {
   try {
     res.render('aboutme');
   } catch (err) {
-    // res.json.status(500);
+    res.json.status(500);
   }
 });
 router.get('/projects', (req, res) => {
   try {
     res.render('projects');
   } catch (err) {
-    // res.json.status(500);
+    res.json.status(500);
   }
 });
 router.get('/contactme', (req, res) => {
   try {
     res.render('contact');
   } catch (err) {
-    // res.json.status(500);
+    res.json.status(500);
+  }
+});
+router.get('/site_info', (req, res) => {
+  try {
+    res.render('siteinfo');
+  } catch (err) {
+    res.json.status(500);
   }
 });
 
