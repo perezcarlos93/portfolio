@@ -1,0 +1,52 @@
+#NameTag {
+  font-size: 8rem;
+}
+
+#logo {
+  max-height: 8rem;
+  max-width: 8rem;
+  padding-bottom: 1.6rem;
+}
+
+#bubble {
+  display: none;
+}
+
+#logo:hover + img {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  bottom: 145px;
+  right: 90px;
+  max-height: 10%;
+  max-width: 10%;
+}
+
+#DevTag {
+  position: relative;
+  padding-left: 5rem;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.349);
+}
+
+#headshot {
+  position: relative;
+  left: 600px;
+  height: 40%;
+  width: 40%;
+  padding-top: 3rem;
+}
+
+#statement {
+  padding-top: 8rem;
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
+
+h4 {
+  font-size: 300%;
+}
+
+p {
+  font-size: 200%;
+}
