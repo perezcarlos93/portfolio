@@ -1,0 +1,117 @@
+/* Custom Fonts */
+@font-face {
+  src: url('/Assets/ONEDAY.ttf');
+  font-family: 'oneday';
+}
+.oneday {
+  font-family: 'oneday';
+  color: white;
+}
+@font-face {
+  src: url('/Assets/ebrima.ttf');
+  font-family: 'ebrima';
+}
+.embrima {
+  font-family: 'ebrima';
+  color: white;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(133, 133, 133, 1) 33%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(133, 133, 133, 1) 33%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(133, 133, 133, 1) 33%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+  color: white;
+}
+
+#HandleBarsbody {
+  padding-left: 25vh;
+  padding-right: 25vh;
+}
+
+/* Removing default attributes of links */
+.link {
+  color: white;
+  text-decoration: none;
+}
+.link:hover {
+  color: rgba(211, 211, 211, 0.527);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Main Navbar present on all pages */
+.customNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+/* Custom Navbar logo */
+.logo {
+  width: 5%;
+  height: 5%;
+  padding-top: 1rem;
+  color: white;
+}
+.logoImg {
+  width: 10%;
+  height: 10%;
+  padding-top: 0.1rem;
+  margin-left: 2.5rem;
+  color: white;
+}
+#bootstrapNav {
+  padding-top: 2.5rem;
+  padding-right: 5.5rem;
+  font-size: 1.5rem;
+}
+
+/* Footer Element */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url('/Assets/mountains.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+}
+.footLinks {
+  flex: 0;
+  margin-top: 22%;
+  margin-bottom: 1rem;
+  margin-left: 45%;
+}
+
+/* Growth Animations for Tech Tags */
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+/* Uncategorized CSS */
+.hidden {
+  display: none;
+}
