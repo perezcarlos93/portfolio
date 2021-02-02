@@ -41,13 +41,8 @@ body {
 }
 
 #HandleBarsbody {
-<<<<<<< HEAD
   padding-left: 25vh;
   padding-right: 25vh;
-=======
-  padding-left: 11rem;
-  padding-right: 11rem;
->>>>>>> bf3530b13d69dd70268763272f2eee007ce25126
 }
 
 /* Removing default attributes of links */
