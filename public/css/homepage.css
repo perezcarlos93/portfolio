@@ -1,5 +1,6 @@
 /* Header div containing logo, name, and occupation tag */
 #NameTag {
+<<<<<<< HEAD
   font-size: 18vh;
 }
 
@@ -7,6 +8,15 @@
   max-height: 17vh;
   max-width: 15vh;
   padding-bottom: 2rem;
+=======
+  font-size: 8rem;
+}
+
+#logo {
+  max-height: 8rem;
+  max-width: 8rem;
+  padding-bottom: 1.6rem;
+>>>>>>> bf3530b13d69dd70268763272f2eee007ce25126
 }
 #logo:hover {
   animation: shake 0.5s;
@@ -50,7 +60,11 @@
 #bubble {
   position: absolute;
   overflow: hidden;
+<<<<<<< HEAD
   left: 5vh;
+=======
+  left: 5rem;
+>>>>>>> bf3530b13d69dd70268763272f2eee007ce25126
   max-height: 10%;
   max-width: 10%;
   display: none;
@@ -62,12 +76,18 @@
 
 #DevTag {
   position: relative;
+<<<<<<< HEAD
   padding-left: 17.5vh;
   font-size: 4vh;
+=======
+  padding-left: 5rem;
+  font-size: 2rem;
+>>>>>>> bf3530b13d69dd70268763272f2eee007ce25126
   color: rgba(255, 255, 255, 0.349);
 }
 
 /* IMAGE DIV containing technology icons and personal headshot */
+<<<<<<< HEAD
 
 #headshot {
   position: relative;
@@ -76,6 +96,29 @@
   width: 40%;
   padding-top: 3rem;
   /* padding-left: 40vh; */
+=======
+.techGallery {
+  /* display: flex; */
+}
+.techIcon {
+  max-width: 5%;
+  max-height: 5%;
+  filter: grayscale(100%);
+  transition-duration: 0.5s;
+}
+.techIcon:hover {
+  filter: grayscale(0%);
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+}
+
+#headshot {
+  position: relative;
+  left: 600px;
+  height: 40%;
+  width: 40%;
+  padding-top: 3rem;
+>>>>>>> bf3530b13d69dd70268763272f2eee007ce25126
   filter: grayscale(100%);
   transition-duration: 10s;
 }
