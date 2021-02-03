@@ -2,9 +2,10 @@
   font-size: 18vh;
 }
 #logo {
-  max-height: 17vh;
-  max-width: 15vh;
+  max-height: 20vh;
+  max-width: 20vh;
   padding-bottom: 2rem;
+  padding-left: 1rem;
 }
 #logo:hover {
   animation: shake 0.5s;
@@ -45,12 +46,13 @@
   }
 }
 
+/* pop up *sniff* when hovering over */
 #sniff {
-  position: absolute;
-  left: 104vh;
-  top: 27vh;
-  max-height: 7%;
-  max-width: 7%;
+  position: relative;
+  right: 24vh;
+  bottom: 6vh;
+  max-height: 15%;
+  max-width: 15%;
   display: none;
   transform: rotate(-20deg);
 }
@@ -60,19 +62,29 @@
   transition: opacity 0s 1s;
 }
 
+/* H5 title gags */
 h5 {
   position: relative;
-  font-size: 4vh;
+  font-size: 5vh;
   color: rgba(255, 255, 255, 0.349);
-  transition: 0.5s;
+  transition: 3s;
+  text-shadow: 2px 2px #000000;
 }
 h5:hover {
   color: white;
-  transition: 1s;
+  transition: 0.5s;
 }
+/* ul:hover + h5 {
+  color: white;
+  transition: 1s;
+} */
+
+/* "The Quick Bits" list */
 ul {
   list-style-type: none;
   color: white;
+  font-size: 3vh;
+  text-shadow: 2px 2px #000000;
 }
 li {
   padding-bottom: 1rem;
