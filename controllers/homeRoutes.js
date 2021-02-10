@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const nodemailer = require('nodemailer');
+const emailjs = require('emailjs-com');
+require('dotenv');
 
 // Get Routes
 router.get('/', (req, res) => {
@@ -40,40 +41,33 @@ router.get('/site_info', (req, res) => {
 });
 
 // POST Routes
-router.post('/contactme', (req, res) => {
+router.post('/contactme', ({ body }, res) => {
   try {
-    console.log(req.body);
-    ('use strict');
+    console.log(body);
 
-    async function main() {
-      // create reusable transporter object using the default SMTP transport
-      let transporter = nodemailer.createTransport({
-        host: 'smtp.ethereal.email',
-        port: 587,
-        secure: false, // true for 465, false for other ports
-        auth: {
-          user: testAccount.user, // generated ethereal user
-          pass: testAccount.pass, // generated ethereal password
-        },
-      });
+    var templateParams = {
+      email: body.email,
+      name: body.name,
+      company: body.company,
+      subject: body.subject,
+      message: body.message,
+    };
 
-      // send mail with defined transport object
-      let info = await transporter.sendMail({
-        from: '"Fred Foo 👻" <foo@example.com>', // sender address
-        to: 'bar@example.com, baz@example.com', // list of receivers
-        subject: req.body.First + req.body.Last, // Subject line
-        text: req.body.message, // plain text body
-        html: '<b>Hello world?</b>', // html body
-      });
-
-      console.log('Message sent: %s', info.messageId);
-      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-    }
-
-    main().catch(console.error);
+    emailjs.send('service_nw6nq09', 'template_68tleul', templateParams).then(
+      function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+      },
+      function (error) {
+        console.log('FAILED...', error);
+      }
+    );
   } catch (err) {
-    res.json.status(500);
+    console.log(err);
   }
+});
+
+router.get('*', (req, res) => {
+  res.send('<h1>Page not found</h1>');
 });
 
 module.exports = router;

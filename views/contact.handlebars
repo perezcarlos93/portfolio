@@ -12,27 +12,31 @@
     <br>
     <form method="POST" action="contactme">
         <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
+            <label for="exampleFormControlInput1">Your details here:</label>
+            <br>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
                 name="email">
         </div>
         <br>
         <div class="row">
             <div class="col">
-                <input type="text" class="form-control" placeholder="First name" name="First">
+                <input type="text" class="form-control" placeholder="Full name" name="name">
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" name="Last">
+                <input type="text" class="form-control" placeholder="Company name" name="company">
             </div>
         </div>
         <br>
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Leave your message here</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" name="message"></textarea>
+            <input type="text" class="form-control col-4" placeholder="Subject" name="subject">
+            <br>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="message here..."
+                name="message"></textarea>
         </div>
         <br>
         <div class="col-sm-10">
-            <button type="submit"><b>Send</b></button>
+            <button type="submit" id="submit"><b>Send</b></button>
         </div>
     </form>
 
