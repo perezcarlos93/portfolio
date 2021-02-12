@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "compression": "^1.7.4",
     "dotenv": "^8.2.0",
     "emailjs-com": "^2.6.4",
